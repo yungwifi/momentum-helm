@@ -1,3 +1,0 @@
-```
-npm -g install typescript
-```
