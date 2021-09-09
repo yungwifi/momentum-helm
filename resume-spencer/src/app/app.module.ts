@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TictactoeComponent } from './tictactoe/tictactoe.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ExperiencesComponent } from './experiences/experiences.component';
 
 registerLocaleData(en);
 
@@ -19,7 +20,8 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     TictactoeComponent,
-    ProfileComponent
+    ProfileComponent,
+    ExperiencesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,8 @@
-<p>profile works!</p>
+<h1>{{name}}</h1>
+
+<div>
+    <p>First Name: {{profiles.firstName}}</p>
+    <p>Last Name: {{profiles.lastName}}</p>
+</div>
+
+<app-experiences [experiences]="profiles.experiences"></app-experiences>

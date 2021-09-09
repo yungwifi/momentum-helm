@@ -1,4 +1,4 @@
-class Profile {
+export default class Profile {
     firstName: string;
     lastName: string;
     title: string;
