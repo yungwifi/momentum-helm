@@ -1,0 +1,1 @@
+export const githubToken = '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';

@@ -1,8 +1,13 @@
-<h1>{{name}}</h1>
+<h4>Profile</h4>
 
 <div>
-    <p>First Name: {{profiles.firstName}}</p>
-    <p>Last Name: {{profiles.lastName}}</p>
+    <p>First Name: {{profileObject.firstName}}</p>
+    <p>Last Name: {{profileObject.lastName}}</p>
 </div>
 
-<app-experiences [experiences]="profiles.experiences"></app-experiences>
+<app-experiences [profile]="profile">
+    <p>This is some content</p>
+    <div>more content, divs</div>
+    <p morestuff>This is some more stuff in a separate element</p>
+    <p #morestuff>this will be loaded into ContentChild</p>
+</app-experiences>

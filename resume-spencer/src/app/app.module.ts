@@ -13,6 +13,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TictactoeComponent } from './tictactoe/tictactoe.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { ProfileIndexComponent } from './profile-index/profile-index.component';
+import { GraphQLModule } from './graphql.module';
 
 registerLocaleData(en);
 
@@ -21,14 +25,18 @@ registerLocaleData(en);
     AppComponent,
     TictactoeComponent,
     ProfileComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    ProfileIndexComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NzButtonModule,
+    NzInputModule,
+    GraphQLModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
